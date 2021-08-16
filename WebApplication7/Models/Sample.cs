@@ -8,7 +8,13 @@ namespace WebApplication7.Models
     public class Sample
     {
         public Object Id { get; set; }
-        public int EpId { get; set; }
-        public string EpName { get; set; }
+        public string customerID { get; set; }
+        public string companyName
+        {
+            get; set;
+        }
+        public string contactName { get; set; }
+        public string contactTitle { get; set; }
+
     }
 }

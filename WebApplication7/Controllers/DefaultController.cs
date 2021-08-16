@@ -24,7 +24,7 @@ namespace WebApplication7.Controllers
         public JsonResult Get()
         {
             MongoClient client = new MongoClient(_Icon.GetConnectionString("Defualt"));
-            var dblist = client.GetDatabase("testdb").GetCollection<Sample>("saple").AsQueryable();
+            var dblist = client.GetDatabase("mongosample").GetCollection<Sample>("Emp").AsQueryable();
             return new JsonResult(dblist);
         }  
             
